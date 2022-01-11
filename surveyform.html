@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="survey-form-page">
+  <div id="container">
+
+    <h1 id="title">Pesquisa com Usuário freeCodeCamp</h1>
+    <p id="description">Obrigado por tirar um tempinho para nos ajudar a melhorar a plataforma</p>
+
+    <form id="survey-form" action="">
+      <div id="name-area" class="form-field">
+        <label id="name-label" for="name">Nome:</label>
+        <input id="name" type="text" name="name" placeholder="Nome" required>
+      </div>
+
+      <div id="email-area" class="form-field">
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div id="age-area" class="form-field">
+        <label id="number-label" for="number">Idade (opcional):</label>
+        <input id="number" type="number" name="age" placeholder="Idade" min="13" max="99">
+      </div>
+
+      <div id="occupation-area" class="form-field">
+        <label id="dropdown-label" for="dropdown">Qual é a sua ocupação atual?</label>
+        <select id="dropdown" name="dropdown" required>
+          <option class="dropdown-option" value="" disabled selected>Selecione uma categoria</option>
+
+          <option class="dropdown-option" value="student">Estudante</option>
+          <option class="dropdown-option" value="fulltime-job">Trabalhador em tempo integral</option>
+          <option class="dropdown-option" value="fulltime-learner">Estudante em tempo integral</option>
+          <option class="dropdown-option" value="no-to-say">Prefiro não dizer</option>
+          <option class="dropdown-option" value="other">Outro</option>
+        </select>
+      </div>
+
+      <div id="user-experience-area" class="form-field">
+        <label id="user-experience-label" for="user-experience">Você recomendaria a FreeCodeCamp?</label>
+        <div id="user-experience">
+          <div class="user-experience-field">
+            <input type="radio" name="user-experience-option" id="definitely" value="definitely" checked>
+            <label id="definitely-label" for="definitely">Com toda a ceteza!</label>
+          </div>
+
+          <div class="user-experience-field">
+            <input type="radio" name="user-experience-option" id="maybe" value="maybe">
+            <label id="maybe-label" for="maybe">Talvez</label>
+          </div>
+
+          <div class="user-experience-field">
+            <input type="radio" name="user-experience-option" id="no" value="no">
+            <label id="no-label" for="no">Não</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="favorite-part-area" class="form-field">
+        <label id="favorite-part-label" for="favorite-part">Qual é a sua parte favorita da plataforma?</label>
+        <select id="favorite-part" name="favorite-part" required>
+          <option class="favorite-part-option" value="" disabled selected>Selecione uma categoria</option>
+
+          <option class="favorite-part-option" value="challenges">Desafios</option>
+          <option class="favorite-part-option" value="projects">Projetos</option>
+          <option class="favorite-part-option" value="community">Comunidade</option>
+          <option class="favorite-part-option" value="open-source">Open Source</option>
+        </select>
+      </div>
+
+      <div id="improved-recommedations-area" class="form-field">
+        <label id="improved-recommedations-label" for="improved-recommedations">O que você gostaria que fosse melhorado?</label>
+        <div id="improved-recommedations">
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="front-end-projects" value="front-end-projects">
+            <label id="front-end-projects-label" for="front-end-projects">Projetos de front-end</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="back-end-projects" value="back-end-projects">
+            <label id="back-end-projects-label" for="back-end-projects">Projetos de back-end</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="data-visualization" value="data-visualization">
+            <label id="data-visualization-label" for="data-visualization">Visualização de dados</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="challenges" value="challenges">
+            <label id="challenges-label" for="challenges">Desafios</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="open-source-community" value="open-source-community">
+            <label id="open-source-community-label" for="open-source-community">Comunidade de produção Open Source</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="gitter-help-rooms" value="gitter-help-rooms">
+            <label id="gitter-help-rooms-label" for="gitter-help-rooms">Rede de salas de ajuda</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="videos" value="videos">
+            <label id="videos-label" for="videos">Vídeos</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="city-meetups" value="city-meetups">
+            <label id="city-meetups-label" for="city-meetups">Conferências</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="wiki" value="wiki">
+            <label id="wiki-label" for="wiki">Wiki da FreeCodeCamp</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="forum" value="forum">
+            <label id="forum-label" for="forum">Fórum</label>
+          </div>
+
+          <div class="improved-recommedations-field">
+            <input type="checkbox" name="improved-recommedations-option" id="additional-courses" value="additional-courses">
+            <label id="additional-courses-label" for="additional-courses">Cursos adicionais</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="text-area" class="form-field">
+        <label id="text-area-label" for="text-area">Algum outro comentário?</label>
+        <textarea id="text-area" type="text" placeholder="Insira um comentário aqui"></textarea>
+      </div>
+
+      <button id="submit" type="submit">Finalizar</button>
+    </form>
+
+  </div>
+</body>
+
+</html>

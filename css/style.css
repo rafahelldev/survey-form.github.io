@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+  --fontFamily: "Poppins";
+  --linearBackground: linear-gradient(to right top, #EAE2B7, #62929E);
+  --borderColor: rgb(163, 163, 163);
+  --formBackground: rgba(248, 249, 250, 0.4);
+  --shadowColor: rgb(85, 85, 85);
+  --inputBackground: #FFF;
+  --buttonBackground: #FFF;
+  --buttonBackgroundHover: #62929E;
+  --buttonColorHover: #FFF;
+}
+
+body#survey-form-page {
+  font-family: var(--fontFamily);
+  background: var(--linearBackground);
+}
+
+div#container {
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1#title, p#description {
+  text-align: center;
+  margin: 0 36px;
+  line-height: 1.5;
+  cursor: default;
+}
+
+p#description {
+  font-style: italic;
+}
+
+form#survey-form {
+  width: 100%;
+  max-width: 540px;
+  border: 1px solid var(--borderColor);
+  box-shadow: 0 0 12px var(--shadowColor);
+  margin-top: 32px;
+  background-color: var(--formBackground);
+}
+
+div.form-field {
+  margin: 24px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+button#submit {
+  margin: 0 auto;
+  margin-bottom: 18px;
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 4px 24px;
+  border: 1px solid var(--borderColor);
+  border-radius: 6px;
+}
+
+button#submit:hover {
+  background-color: var(--buttonBackgroundHover);
+  color: var(--buttonColorHover);
+}
+
+div.form-field select, div.form-field input {
+  background-color: var(--inputBackground);
+  border: 1px solid var(--borderColor);
+  padding: 4px 8px;
+}
+
+div.form-field textarea {
+  padding: 8px;
+  resize: none;
+  height: 120px;
+}
+
+div.form-field label {
+  margin-bottom: 6px;
+}
+
+div.form-field input[type="radio"], div.form-field input[type="checkbox"] {
+  margin: 3px 0;
+}
+
+div.form-field > label {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 540px) {
+  h1#title {
+    font-size: 24px;
+  }
+
+  h1#title, p#description {
+    margin: 0 24px;
+  }
+
+  div#container {
+    margin-bottom: 0;
+    border: 0;
+  }
+
+  form#survey-form {
+    box-shadow: none;
+  }
+}
